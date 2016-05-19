@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.websystique.springmvc</groupId>
-  <artifactId>Spring4MVCCRUDRestService</artifactId>
-  <packaging>war</packaging>
-  <version>1.0.0</version>
-  <name>Spring4MVCCRUDRestService Maven Webapp</name>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.websystique.springmvc</groupId>
+	<artifactId>Spring4MVCCRUDRestService</artifactId>
+	<packaging>war</packaging>
+	<version>1.0.0</version>
+	<name>Spring4MVCCRUDRestService Maven Webapp</name>
 
-  	<properties>
+	<properties>
 		<springframework.version>4.2.6.RELEASE</springframework.version>
 		<jackson.version>2.7.0</jackson.version>
 	</properties>
@@ -26,17 +26,39 @@
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
-		    <artifactId>jackson-databind</artifactId>
-		    <version>${jackson.version}</version>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 		</dependency>
-			
-	</dependencies>
 
+	</dependencies>
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://collaborate.bt.com/artefacts/content/repositories/central</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://collaborate.bt.com/artefacts/content/repositories/central</url>
+		</pluginRepository>
+	</pluginRepositories>
 
 	<build>
 		<pluginManagement>
