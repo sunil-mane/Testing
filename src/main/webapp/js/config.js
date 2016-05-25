@@ -1,4 +1,4 @@
-app.run(function ($rootScope, $state, loginService) {
+angular.module('demoApp').run(function ($rootScope, $state, loginService) {
     $rootScope.$on('$stateChangeStart',
             function (event, toState, toParams, fromState, fromParams) {
                 if (toState.authenticate && !loginService.isLogedin()) {

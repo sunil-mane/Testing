@@ -1,4 +1,4 @@
-app.factory('loginService', function($localStorage, $sessionStorage){
+angular.module('demoApp').factory('loginService', function($localStorage, $sessionStorage){
     return {
         login : function(loginObj){
             if(loginObj.remember){

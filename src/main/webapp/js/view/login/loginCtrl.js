@@ -1,4 +1,4 @@
-app.controller('loginCtrl', function($scope, $state, loginService){
+angular.module('demoApp').controller('loginCtrl', function($scope, $state, loginService){
     $scope.loginObj = loginService.getRemember();
     
     $scope.login = function(){
