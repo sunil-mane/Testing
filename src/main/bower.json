@@ -1,12 +1,12 @@
 {
-  "name": "webapp",
-  "description": "",
-  "main": "index.js",
+  "name": "main",
+  "homepage": "https://github.com/sunil-mane/Testing",
   "authors": [
     "Sunil Mane <sunil_mane@yahoo.com>"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/sunil-mane/Testing",
+  "description": "DemoApp",
+  "main": "webapp/index.js",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
