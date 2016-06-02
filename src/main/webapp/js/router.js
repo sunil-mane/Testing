@@ -23,6 +23,12 @@ angular.module('demoApp').config(function ($stateProvider, $urlRouterProvider) {
                 templateUrl: "js/view/customer/customers.html",
                 controller: 'customerCtrl'
             })
+            .state('home.users', {
+                authenticate:true,
+                url: "/users",
+                templateUrl: "js/view/user/users.html",
+                controller: 'userCtrl'
+            })
             .state('home.products', {
                 authenticate:true,
                 url: "/products",
